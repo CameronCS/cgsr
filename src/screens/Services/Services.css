@@ -1,0 +1,77 @@
+/* General styles for the Services page */
+.services-main {
+    background-image: url('/build/static/bgs/genny.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    color: darkgrey;
+    font-family: Arial, sans-serif;
+}
+
+.services-main h1, h2 {
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.services-main p, li {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Container for each section */
+.services-main > div {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.services-main ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Headings styling */
+.services-main h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.services-main h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+/* Paragraph and list item styling */
+.services-main p {
+    margin-bottom: 15px;
+}
+
+.services-main li {
+    margin-bottom: 10px;
+}
+
+/* Highlight and emphasis */
+.services-main strong {
+    color: #ffffff;
+}
+
+/* Ensure the layout adapts nicely */
+@media (max-width: 768px) {
+    .services-main {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p, li {
+        font-size: 14px;
+    }
+}

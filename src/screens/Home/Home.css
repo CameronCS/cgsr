@@ -1,0 +1,64 @@
+/* Home Page Styling */
+.home {
+    background-color: #111; /* Dark grey background */
+    color: #ccc; /* Light grey text */
+    font-family: Arial, sans-serif;
+}
+
+/* Logo Section */
+.image-wrapper {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #000; /* Black background for the logo */
+}
+
+.logo {
+    height: auto;
+    width: 25%;
+}
+
+/* Content Section */
+.home-content {
+    max-width: 1200px; /* Set a max width for better readability */
+    margin: 0 auto; /* Center align the content */
+    text-align: center; /* Center the content */
+    padding: 20px;
+}
+
+/* Title */
+.home-title {
+    font-size: 2.5rem;
+    color: #fff; /* White text for the title */
+    margin-bottom: 20px;
+}
+
+/* Paragraphs */
+.home-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ddd; /* Lighter grey for body text */
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+/* Bold text */
+.home-description strong {
+    font-weight: bold;
+    color: #fff; /* White color for bold text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-title {
+        font-size: 2rem; /* Adjust title size on small screens */
+    }
+
+    .home-description {
+        font-size: 1rem; /* Adjust text size on small screens */
+        padding: 0 10px;
+    }
+
+    .logo {
+        max-width: 90%; /* Adjust logo size on smaller screens */
+    }
+}

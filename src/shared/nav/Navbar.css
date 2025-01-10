@@ -1,0 +1,54 @@
+/* Navbar Header */
+.nav-header {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text for contrast */
+    position: sticky; /* Sticky positioning */
+    top: 0; /* Stick to the top of the viewport */
+}
+
+/* Sticky Nav Bar */
+.nav-bar {
+    z-index: 1000; /* Ensure it stays above other elements */
+    background-color: #000; /* Black background for consistency */
+    display: flex;
+    justify-content: center; /* Center the nav items */
+    padding: 10px 0;
+    z-index: 9999999;
+}
+
+/* Nav List Styles */
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list-item {
+    margin: 0 15px;
+}
+
+.nav-list-link {
+    text-decoration: none;
+    color: #ddd; /* Light grey text for navigation links */
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-list-link:hover {
+    background-color: #333; /* Dark grey for hover effect */
+    color: #fff; /* White text on hover */
+}
+
+.nav-list-link:active {
+    background-color: #555; /* Medium grey when active */
+}
+
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+    background-color: #fff; /* Light background for contrast */
+}

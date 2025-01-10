@@ -1,0 +1,68 @@
+/* Footer Styles */
+.footer {
+    background-color: #000; /* Dark grey background */
+    color: #ccc; /* Light grey text */
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap; /* Ensure proper wrapping on smaller screens */
+    justify-content: space-between; /* Space the divs evenly */
+    align-items: center; /* Center align the content */
+}
+
+/* Credits Section */
+.credits {
+    margin-bottom: 10px;
+    flex: 1; /* Equal space distribution */
+    min-width: 200px; /* Ensures proper spacing for smaller screens */
+}
+
+.credits p {
+    margin: 5px 0;
+}
+
+/* Copyright Section */
+.copyright {
+    margin-bottom: 10px;
+    flex: 1; /* Equal space distribution */
+    min-width: 200px; /* Ensures proper spacing for smaller screens */
+}
+
+.copyright p {
+    margin: 5px 0;
+}
+
+/* Additional Links Section */
+.additional {
+    margin-top: 10px;
+    flex: 1; /* Equal space distribution */
+    min-width: 200px; /* Ensures proper spacing for smaller screens */
+}
+
+.additional .addtional-p {
+    margin: 5px 0;
+}
+
+.additional-link {
+    color: #ddd; /* Light grey for links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.additional-link:hover {
+    color: #fff; /* White on hover */
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Stack divs vertically on small screens */
+        align-items: stretch; /* Ensure divs stretch full width */
+    }
+
+    .credits, .copyright, .additional {
+        margin-bottom: 15px;
+    }
+}

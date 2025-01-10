@@ -1,0 +1,128 @@
+
+.contact-us-main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.details-and-request {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.details-and-request p {
+    color: white;
+}
+
+.details-and-request a {
+    color: rgb(0, 247, 255);
+}
+
+.left-hand-side, .right-hand-side {
+    width: 48%;
+    background-color: #333333;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.contact-select-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.select-item {
+    flex: 1;
+    padding: 10px;
+    margin: 0 5px;
+    background-color: #444444;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.select-item.active, .select-item:hover {
+    background-color: #555555;
+}
+
+.form-container {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #cccccc;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #555555;
+    background-color: #444444;
+    color: #ffffff;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #555555;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #666666;
+}
+
+.address, .contact-details {
+    margin-bottom: 20px;
+}
+
+.address p, .contact-details p {
+    margin: 5px 0;
+}
+
+.google-map {
+    margin-top: 20px;
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 8px;
+}

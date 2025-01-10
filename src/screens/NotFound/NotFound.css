@@ -1,0 +1,57 @@
+/* General styles for the Not Found page */
+.not-found-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e1e1e 50%, #444444);
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+.not-found-content {
+    text-align: center;
+    animation: flicker 1.5s infinite alternate;
+}
+
+.not-found-title {
+    font-size: 6rem;
+    margin: 0;
+    color: #ff0000;
+    text-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000;
+}
+
+.not-found-subtitle {
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+.not-found-message {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.not-found-suggestion {
+    font-size: 1rem;
+    color: #bbbbbb;
+}
+
+.not-found-suggestion a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.not-found-suggestion a:hover {
+    color: #ff0000;
+}
+
+@keyframes flicker {
+    from {
+        opacity: 0.9;
+    }
+    to {
+        opacity: 1;
+    }
+}
