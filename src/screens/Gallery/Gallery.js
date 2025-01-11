@@ -12,7 +12,7 @@ export default function Gallery() {
   useEffect(() => {
     const imgArray = [];
     const videoArray = [];
-    for (let i = 0; i < 24; i++) {
+    for (let i = 0; i < 35; i++) {
       imgArray.push(Environment.galleryUrl('images', i + 1, 'jpeg'));
     }
     for (let i = 0; i < 4; i++) {
