@@ -13,9 +13,7 @@ class ProdEnv {
     }
 }
 
-
 let indev = false
-
 
 const Environment = indev ? DevEnv : ProdEnv
 export default Environment
