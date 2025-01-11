@@ -198,12 +198,23 @@ export default function ContactUs() {
             <p>Mary-Ann: 072 424 0417</p>
             <p>Mail Us At <a href='mailto:classicgeneratorservicesrepair@gmail.com'>classicgeneratorservicesrepair@gmail.com</a></p>
           </div>
+          <div>
+            <h3>Trading hours</h3>
+            <li>Monday: 8:00-17:00</li>
+            <li>Tuesday: 8:00-17:00</li>
+            <li>Wednesay: 8:00-17:00</li>
+            <li>Thursday: 8:00-17:00</li>
+            <li>Friday: 8:00-17:00</li>
+            <li>Saturday: 8:00-17:00</li>
+            <li>Sunday: 8:00-17:00</li>
+            <p>Please note we do offer 24/7 support</p>
+          </div>
         </div>
       </div>
 
       <div className='google-map'>
         <h2>Find Us On the Map</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2889.0607176890153!2d29.40012080311719!3d-30.558017303277826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzDCsDMzJzI4LjQiUyAyOcKwMjQnMTAuNiJF!5e0!3m2!1sen!2sza!4v1736449730358!5m2!1sen!2sza" width="1400" height="600" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+        <iframe title='google-map-api-addr' src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2889.0607176890153!2d29.40012080311719!3d-30.558017303277826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzDCsDMzJzI4LjQiUyAyOcKwMjQnMTAuNiJF!5e0!3m2!1sen!2sza!4v1736449730358!5m2!1sen!2sza" width="1400" height="600" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   );

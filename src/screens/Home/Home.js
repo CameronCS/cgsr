@@ -1,11 +1,12 @@
 import React from 'react'
 import './Home.css'
+import Environment from '../../Environment'
 
 export default function Home() {
   return (
     <div className='home'>
       <div className='image-wrapper'>
-        <img src='/build/Logo.jpeg' alt='logo' className='logo' />
+        <img src={Environment.logoUrl} alt='logo' className='logo' />
       </div>
 
       <div className='home-content'>

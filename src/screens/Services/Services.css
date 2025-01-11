@@ -1,6 +1,6 @@
 /* General styles for the Services page */
 .services-main {
-    background-image: url('/build/static/bgs/genny.jpg');
+    background-image: url('/public/static/bgs/genny.jpg');
     background-size: cover;
     background-position: center;
     padding: 40px;

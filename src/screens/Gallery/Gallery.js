@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import './Gallery.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import Environment from '../../Environment';
 
 export default function Gallery() {
   const [images, setImages] = useState([]);
@@ -12,10 +13,10 @@ export default function Gallery() {
     const imgArray = [];
     const videoArray = [];
     for (let i = 0; i < 35; i++) {
-      imgArray.push(`/build/static/images/${i + 1}.jpeg`);
+      imgArray.push(Environment.galleryUrl('images', i + 1, 'jpeg'));
     }
     for (let i = 0; i < 4; i++) {
-      videoArray.push(`/build/static/videos/${i + 1}.mp4`);
+      videoArray.push(Environment.galleryUrl('videos', i + 1, 'mp4'));
     }
     setVideos(videoArray);
     setImages(imgArray);
@@ -93,7 +94,7 @@ export default function Gallery() {
       <Slider {...imageSettings} className='gallery-carousel'>
         {images.map((image, index) => (
           <div className='gallery-item' key={index}>
-            <img src={image} alt={`Gallery Image ${index + 1}`} className='gallery-img' />
+            <img src={image} alt={`Gallery ${index + 1}`} className='gallery-img' />
           </div>
         ))}
       </Slider>
