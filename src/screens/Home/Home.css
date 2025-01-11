@@ -56,6 +56,7 @@
     .home-description {
         font-size: 1rem; /* Adjust text size on small screens */
         padding: 0 10px;
+        text-align: left;
     }
 
     .logo {

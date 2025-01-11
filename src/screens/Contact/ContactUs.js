@@ -196,7 +196,7 @@ export default function ContactUs() {
             <h3>Our Contact Details</h3>
             <p>Wentzel: 076 954 6793</p>
             <p>Mary-Ann: 072 424 0417</p>
-            <p>Mail Us At <a href='mailto:classicgeneratorservicesrepair@gmail.com'>classicgeneratorservicesrepair@gmail.com</a></p>
+            <p>Mail Us At <a className='contact-us-email' href='mailto:classicgeneratorservicesrepair@gmail.com'>classicgeneratorservicesrepair@gmail.com</a></p>
           </div>
           <div>
             <h3>Trading hours</h3>

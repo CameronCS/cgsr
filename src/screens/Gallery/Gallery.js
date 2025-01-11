@@ -22,74 +22,53 @@ export default function Gallery() {
     setImages(imgArray);
   }, []);
 
-  const imageSettings = {
+  const commonSettings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
+    swipe: true,           // Enable swipe gestures
+    touchMove: true,       // Enable touch movement
+    arrows: true,          // Show navigation arrows
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1,
         }
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
         }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1,
         }
       }
     ]
   };
 
-  const videoSettings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
+  const imageSettings = {
+    ...commonSettings,
     slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: false, // Disable auto-scroll for videos
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        }
-      }
-    ]
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
+
+  const videoSettings = {
+    ...commonSettings,
+    slidesToShow: 4,
+    autoplay: false,
   };
 
   return (
     <div className='gallery-main'>
       <h1 className='gallery-header'>Our Gallery</h1>
+
       <h2>Our Pictures</h2>
       <Slider {...imageSettings} className='gallery-carousel'>
         {images.map((image, index) => (
